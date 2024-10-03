@@ -1,0 +1,30 @@
+<!-- templates/next.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AADHAR AUTHENTICATION</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body style="margin-top: 75px;">
+    <div class="container">
+        <h2 style="color: rgb(79, 70, 70);"><marquee>AADHAAR AUTHENTICATION WITH OTP</marquee></h2>
+        <br>
+        <form id="otpForm" action="{{ url_for('send') }}" method="post">
+            <label for="aadharNumber" >Enter Your Aadhaar_Number :</label><br>
+            <input type="text" id="aadhaarNumber"style="width: 45%;height: 45px; font-family: 'Courier New', Courier, monospace;" pattern="\d{12}" name="inputField" placeholder="Enter 12 digit Aadhaar Number" autocomplete="off" required>
+            <button type="submit">Send OTP</button>
+        </form>
+        <form id="otpvalid" action="{{url_for('button')}}" method="post">
+            <br><br>
+            <label for="otp_validation">Enter_Valid_otp :</label>
+            <input type="text" style="width: 45%;height: 45px; font-family: 'Courier New', Courier, monospace;" id="otp_validation" pattern="\d{6}" name="otpForm" autocomplete="off" placeholder="Enter_Valid_OTP">
+            <button type="submit">Validate</button>
+        </form>
+         <div id="outputDiv" align="center">
+            <p>{{ output }}</p>
+        </div>
+    </div>
+</body>
+</html>

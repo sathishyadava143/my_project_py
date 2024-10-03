@@ -1,0 +1,26 @@
+step 1:
+ # open ganache
+ # then open cmd type this commands
+   >>> ngrok config add-authtoken 1lbIZoBc4FuVBChiPqOkwHCBDDO_4cJn1TPsaYTd2cPj91zC
+   >>> ngrok http --domain=uncommon-anemone-feasible.ngrok-free.app 7545
+   connect metamask wallet to online
+
+step 2:
+ #open cmd path of the project
+   >>> truffle migrate --reset
+   >>> cd client
+   >>> npm start
+ #open a new cmd tab
+   >>> ngrok config add-authtoken 2ekznjeLRead42t8CQPc2Y0wDs6_6xtTkPWG9b46eRjYRXGgt
+
+   >>> ngrok http --domain=platypus-cool-gazelle.ngrok-free.app 3000
+
+step 3:
+ #open new cmd tab
+   >>> cd authentication
+   >>> myenv/Scripts/activate
+   >>> python app.py
+ #open a new cmd tab
+   >>> ngrok config add-authtoken 2el0jqGqw5rwYBf3F0C9IAOvnOj_5fQjqrujLyr4uDZXV45Tr
+   >>> ngrok http --domain=leech-novel-briefly.ngrok-free.app 8000
+   

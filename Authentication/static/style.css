@@ -1,0 +1,105 @@
+        /* static/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url('flag1.jpg') no-repeat;
+    height: auto;
+    background-size: cover;
+    
+    
+    
+    
+}    
+
+.container {
+    /*background: url('flag.jpg') no-repeat;
+    background-size: cover;
+    background: height 120vh;*/
+    padding: 20px;
+    border-radius: 10px;
+    border:2px solid rgba(80, 76, 76, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    backdrop-filter: blur(2px);
+       
+
+}
+
+
+h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #494b4aec;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-style: bold italic;
+    color:#000000;
+    
+}
+
+input {
+    width: 75%;
+    padding: 7px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #40b944;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#outputDiv {
+    margin-top: 20px;
+}
+.form-control {
+            display: block;
+            width: 90%;
+            margin-left: 12px;
+            height: 24px;
+            padding: 3px 6px;
+            font-size: 12px;
+            /*line-height: 1.42857;*/
+            color: #555;
+            background-color: #FFF;
+            background-image: none;
+            border: 1px solid #bdbdbd;
+            border-radius: 4px;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+            transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+        }
+
+.fingerbox{
+            border: 1.5px solid gray;
+            align-items: center;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+           
+         }  
+         input[type=text]:focus {
+            background-color: lightblue;
+             border: 3px solid #555;
+        }               

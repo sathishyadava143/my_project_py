@@ -1,0 +1,78 @@
+/* static/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url('flag1.jpg') no-repeat;
+    height: auto;
+    background-size: cover;
+}
+
+.container {
+    
+    padding-top: 50px;
+    padding-bottom: 70px;
+    border-radius: 10px;
+    border:2px solid rgba(80, 76, 76, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    backdrop-filter: blur(2px);
+    
+    
+}
+#txt {
+    width: 75%;
+    height: 42px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    font-family: Garamond;
+    font-weight: bold;
+    color: #394a41;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size:medium;
+    font-style: bold italic;
+    color:#38453e;
+    
+}
+
+input {
+    width: 75%;
+    padding: 7px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#outputDiv {
+    margin-top: 20px;
+}
